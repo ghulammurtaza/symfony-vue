@@ -1,0 +1,126 @@
+.divTable{
+    display: table;
+    width: 80%;
+    overflow-x:auto !important;
+   margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.divTableRow {
+    display: table-row;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+}
+
+.divTableFirstRow {
+    background-color: #4A8E1E;
+    font-family: "Lato", Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.divTableHeading {
+    background-color: #4A8E1E;
+    display: table-header-group;
+}
+
+div.divTableRow.divTableFirstRow:hover {
+    background-color: rgba(74, 142, 30, 1) !important;
+}
+
+.divTableCell, .divTableHead {
+    border-right: 1px solid rgba(255, 255, 255, 0.5);/*#999999;*/
+    display: table-cell;
+    padding: 10px 10px;
+    font-family: "Lato", Times, serif;
+    font-size: 16px;
+    color: #003C04;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    vertical-align: middle;
+}
+
+.divTableCell:last-child {
+    border-right: none;
+}
+
+.divTableHeading {
+    background-color: #4A8E1E;
+    display: table-header-group;
+    font-weight: bold;
+}
+.divTableFoot {
+    background-color: #EEE;	display: table-footer-group;
+    font-weight: bold;
+}
+.divTableBody {
+    display: table-row-group;
+    overflow-x:auto !important;
+    text-align: center;
+    min-height: 400px;
+}
+
+div.divTableRow.odd {
+    background-color: rgba(74, 142, 30, 0.1);
+}
+
+div.divTableRow.even {
+    background-color: rgba(74, 142, 30, 0.2);
+}
+
+div.divTableRow:hover {
+    background-color: rgba(74, 142, 30, 0.8);
+    color: #fff;
+}
+
+
+.fav-btn {
+    white-space: nowrap;
+    background-color: rgba(74, 142, 30, 0.4);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    /*	color: #fff !important;*/
+    font-weight: bolder;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    vertical-align: middle;
+    /*	color: #003C04;*/
+}
+
+.divTableCell a {
+    color: #003C04;
+}
+
+.fav-btn:hover {
+    background-color: rgba(74, 142, 30);
+    color: #fff;
+}
+
+div.divTableRow:hover .divTableCell,
+div.divTableRow:hover .divTableCell a {
+    color: #fff;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+a{
+    font-size: 14px;
+    color: #003C04;
+}
+ul li{
+    list-style: none;
+    padding: 20px;
+    float: left;
+}
+h1 span a{
+    font-size: 20px;
+}

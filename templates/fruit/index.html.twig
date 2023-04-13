@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Fruit Listing!{% endblock %}
+
+{% block body %}
+<div class="wrapper">
+    <h1>Fruits <span><a href="{{ path('favourites') }}">My Favourites</a> </span></h1>
+    <div {{ vue_component('Fruits', { 'url': path('fruit_list')}) }}></div>
+
+</div>
+{% endblock %}
